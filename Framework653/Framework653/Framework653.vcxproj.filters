@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{5a9c919b-5388-4bfa-85f7-745635a9d2b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\GeneratedCode">
+      <UniqueIdentifier>{f737a683-3cae-4387-a47e-f7790a46f2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HMI">
+      <UniqueIdentifier>{1ad88514-0999-42a9-8ac1-40b70c57d94a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HMI\GeneratedCode">
+      <UniqueIdentifier>{0a7ea37b-9429-4890-9233-4607b5d1f7b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VCAST">
+      <UniqueIdentifier>{78fb708c-1121-4b21-94a6-01b8827a0a70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_2.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_8.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_19.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\DecodeLabel.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetData.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetLabelNumber.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetSSM.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GpsManager.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\Int2BoolVect_digital_32.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\Int2BoolVectElt_digital.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IoManager.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IrsManager.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_consts.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_types.c">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\VCAST\Environments\IoTccCoverage\c_cover_io.cpp">
+      <Filter>Source Files\VCAST</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_2.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_8.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_19.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\DecodeLabel.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetData.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetLabelNumber.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetSSM.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GpsManager.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\Int2BoolVect_digital_32.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\Int2BoolVectElt_digital.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IoManager.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IoManager_macro.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IrsManager.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_consts.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_imported_types.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_sensors.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_types.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\user_macros.h">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\VCAST\Environments\IoTccCoverage\vcast_c_options.h">
+      <Filter>Source Files\VCAST</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\cmd_cg.log">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\config.txt">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IoManager_VxWorks.files">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg.log">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_files.txt">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_metrics.txt">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_s2c_config.txt">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_trace.xml">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_xml_filter_out.scade">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\sc2c.log">
+      <Filter>Source Files\IO\GeneratedCode</Filter>
+    </None>
+  </ItemGroup>
+</Project>

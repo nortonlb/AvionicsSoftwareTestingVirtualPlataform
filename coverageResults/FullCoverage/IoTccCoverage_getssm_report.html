@@ -1,0 +1,53 @@
+<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><body bgcolor="#FFFFFF"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Aggregate&nbsp;Coverage</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><strong>Code&nbsp;Coverage&nbsp;for&nbsp;Unit:&nbsp;GetSSM.c</strong></td></tr><tr><td align="left"><pre><span>--&nbsp;Coverage&nbsp;Type:&nbsp;Statement
+</span><span>--&nbsp;Unit:&nbsp;GetSSM.c
+</span><span>--&nbsp;Test&nbsp;Case:&nbsp;Aggregate
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;$***************&nbsp;KCG&nbsp;Version&nbsp;6.1.3&nbsp;(build&nbsp;i6)&nbsp;****************
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Command:&nbsp;s2c613&nbsp;-config&nbsp;C:/TccCaseStudy/ScadeSuiteModel/Io/KCG\kcg_s2c_config.txt
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Generation&nbsp;date:&nbsp;2015-05-30T15:20:09
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************************************************************$&nbsp;*/
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\kcg_consts.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\kcg_sensors.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\GetSSM.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;GetSSM&nbsp;*/
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kcg_int&nbsp;GetSSM(/*&nbsp;GetSSM::iA429Word&nbsp;*/kcg_int&nbsp;iA429Word)
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array_bool_32&nbsp;tmp;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;GetSSM::iSSM&nbsp;*/&nbsp;kcg_int&nbsp;iSSM;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;1&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Int2BoolVect_digital_32(iA429Word,&nbsp;&amp;tmp);
+</span><span style="color:#009900;">1&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iSSM&nbsp;=&nbsp;/*&nbsp;1&nbsp;*/&nbsp;BoolVect2Int_digital_2((array_bool_2&nbsp;*)&nbsp;&amp;tmp[29]);
+</span><span style="color:#009900;">1&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;iSSM;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;$***************&nbsp;KCG&nbsp;Version&nbsp;6.1.3&nbsp;(build&nbsp;i6)&nbsp;****************
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;GetSSM.c
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Generation&nbsp;date:&nbsp;2015-05-30T15:20:09
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************************************************************$&nbsp;*/
+</span><span>TEST&nbsp;COVERAGE&nbsp;SUMMARY
+</span><span>
+</span><span>
+</span><span>&nbsp;3&nbsp;of&nbsp;3&nbsp;Lines&nbsp;Covered&nbsp;(&nbsp;100%&nbsp;)
+</span></pre></td></tr></table></td></tr></table><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Basis&nbsp;Path</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;"><tr bgcolor="#CCD8EE"><td colspan="1"><strong>Unit:&nbsp;GetSSM.c</strong></td></tr><tr bgcolor="#EEEEEE"><td><pre>  
+  Subprogram GetSSM
+  
+    Test Path Listing
+    Test Path 1
+        No conditional statements
+  
+      Complexity: 1
+  
+    Source Code Listing
+  
+                 kcg_int GetSSM(/* GetSSM::iA429Word */kcg_int iA429Word)
+                 {
+                   array_bool_32 tmp;
+                   /* GetSSM::iSSM */ kcg_int iSSM;
+                   /* 1 */ 
+  1 0     ( )    GetSSM
+                           Int2BoolVect_digital_32(iA429Word, &amp;tmp);
+                   iSSM = /* 1 */ BoolVect2Int_digital_2((array_bool_2 *) &amp;tmp[29]);
+                   return iSSM;
+                 }
+  
+  
+  
+</pre></td></tr></table></td></tr></table><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Metrics</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;"><tr bgcolor="#CCD8EE"><td bgcolor="#CCD8EE"><strong>Unit</strong></td><td bgcolor="#CCD8EE"><strong>Subprogram</strong></td><td bgcolor="#CCD8EE"><strong>Complexity</strong></td><td bgcolor="#CCD8EE"><strong>Statements</strong></td></tr><tr bgcolor="#EEEEEE"><td>GetSSM.c</td><td>GetSSM</td><td align="right">1</td><td bgcolor="#CCFFCC">100%&nbsp;(3&nbsp;/&nbsp;3)</td></tr><tr bgcolor="#EEEEEE"><td><strong>TOTALS</strong></td><td><strong>1</strong></td><td align="right"><strong>1</strong></td><td bgcolor="#CCFFCC"><strong>100%&nbsp;(3&nbsp;/&nbsp;3)</strong></td></tr><tr bgcolor="#EEEEEE"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr bgcolor="#EEEEEE"><td><strong>GRAND&nbsp;TOTALS</strong></td><td><strong>1</strong></td><td align="right"><strong>1</strong></td><td bgcolor="#CCFFCC"><strong>100%&nbsp;(3&nbsp;/&nbsp;3)</strong></td></tr></table></td></tr></table></body></html>

@@ -1,0 +1,77 @@
+<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><body bgcolor="#FFFFFF"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Aggregate&nbsp;Coverage</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><strong>Code&nbsp;Coverage&nbsp;for&nbsp;Unit:&nbsp;Int2BoolVect_digital_32.c</strong></td></tr><tr><td align="left"><pre><span>--&nbsp;Coverage&nbsp;Type:&nbsp;Statement
+</span><span>--&nbsp;Unit:&nbsp;Int2BoolVect_digital_32.c
+</span><span>--&nbsp;Test&nbsp;Case:&nbsp;Aggregate
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;$***************&nbsp;KCG&nbsp;Version&nbsp;6.1.3&nbsp;(build&nbsp;i6)&nbsp;****************
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Command:&nbsp;s2c613&nbsp;-config&nbsp;C:/TccCaseStudy/ScadeSuiteModel/Io/KCG\kcg_s2c_config.txt
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Generation&nbsp;date:&nbsp;2015-05-30T15:20:09
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************************************************************$&nbsp;*/
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\kcg_consts.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\kcg_sensors.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\Int2BoolVect_digital_32.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;digital::Int2BoolVect&nbsp;*/
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void&nbsp;Int2BoolVect_digital_32(
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;digital::Int2BoolVect::In&nbsp;*/kcg_int&nbsp;In,
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;digital::Int2BoolVect::BV&nbsp;*/array_bool_32&nbsp;*BV)
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kcg_int&nbsp;tmp;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kcg_int&nbsp;i;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;digital::Int2BoolVect::Acc&nbsp;*/&nbsp;kcg_int&nbsp;Acc;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;digital::Int2BoolVect::_L4&nbsp;*/&nbsp;array_bool_32&nbsp;_L4;
+</span><span style="color:#009900;">1&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acc&nbsp;=&nbsp;In;
+</span><span style="color:#009900;">1&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;32;&nbsp;i++)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp&nbsp;=&nbsp;Acc;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;1&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Int2BoolVectElt_digital(tmp,&nbsp;&amp;Acc,&nbsp;&amp;_L4[i]);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span style="color:#009900;">1&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;32;&nbsp;i++)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*BV)[i]&nbsp;=&nbsp;_L4[31&nbsp;-&nbsp;i];
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;$***************&nbsp;KCG&nbsp;Version&nbsp;6.1.3&nbsp;(build&nbsp;i6)&nbsp;****************
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Int2BoolVect_digital_32.c
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Generation&nbsp;date:&nbsp;2015-05-30T15:20:09
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************************************************************$&nbsp;*/
+</span><span>TEST&nbsp;COVERAGE&nbsp;SUMMARY
+</span><span>
+</span><span>
+</span><span>&nbsp;6&nbsp;of&nbsp;6&nbsp;Lines&nbsp;Covered&nbsp;(&nbsp;100%&nbsp;)
+</span></pre></td></tr></table></td></tr></table><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Basis&nbsp;Path</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;"><tr bgcolor="#CCD8EE"><td colspan="1"><strong>Unit:&nbsp;Int2BoolVect_digital_32.c</strong></td></tr><tr bgcolor="#EEEEEE"><td><pre>  
+  Subprogram Int2BoolVect_digital_32
+  
+    Test Path Listing
+    Test Path 1
+           (1) for (i &lt; 32) ==&gt; FALSE
+           (2) for (i &lt; 32) ==&gt; FALSE
+    Test Path 2
+           (1) for (i &lt; 32) ==&gt; FALSE
+           (2) for (i &lt; 32) ==&gt; TRUE
+    Test Path 3
+           (1) for (i &lt; 32) ==&gt; TRUE
+           (2) for (i &lt; 32) ==&gt; FALSE
+  
+      Complexity: 3
+  
+    Source Code Listing
+  
+                 void Int2BoolVect_digital_32(
+                   /* digital::Int2BoolVect::In */kcg_int In,
+                   /* digital::Int2BoolVect::BV */array_bool_32 *BV)
+                 {
+                   kcg_int tmp;
+                   kcg_int i;
+                   /* digital::Int2BoolVect::Acc */ kcg_int Acc;
+                   /* digital::Int2BoolVect::_L4 */ array_bool_32 _L4;
+  1 0     ( )    Int2BoolVect_digital_32
+                   Acc = In;
+  1 1     ( )( ) for (i = 0; i &lt; 32; i++) {
+                     tmp = Acc;
+                     /* 1 */ Int2BoolVectElt_digital(tmp, &amp;Acc, &amp;_L4[i]);
+                   }
+  1 2     ( )( ) for (i = 0; i &lt; 32; i++) {
+                     (*BV)[i] = _L4[31 - i];
+                   }
+                 }
+  
+  
+  
+</pre></td></tr></table></td></tr></table><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Metrics</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;"><tr bgcolor="#CCD8EE"><td bgcolor="#CCD8EE"><strong>Unit</strong></td><td bgcolor="#CCD8EE"><strong>Subprogram</strong></td><td bgcolor="#CCD8EE"><strong>Complexity</strong></td><td bgcolor="#CCD8EE"><strong>Statements</strong></td></tr><tr bgcolor="#EEEEEE"><td>Int2BoolVect_digital_32.c</td><td>Int2BoolVect_digital_32</td><td align="right">3</td><td bgcolor="#CCFFCC">100%&nbsp;(6&nbsp;/&nbsp;6)</td></tr><tr bgcolor="#EEEEEE"><td><strong>TOTALS</strong></td><td><strong>1</strong></td><td align="right"><strong>3</strong></td><td bgcolor="#CCFFCC"><strong>100%&nbsp;(6&nbsp;/&nbsp;6)</strong></td></tr><tr bgcolor="#EEEEEE"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr bgcolor="#EEEEEE"><td><strong>GRAND&nbsp;TOTALS</strong></td><td><strong>1</strong></td><td align="right"><strong>3</strong></td><td bgcolor="#CCFFCC"><strong>100%&nbsp;(6&nbsp;/&nbsp;6)</strong></td></tr></table></td></tr></table></body></html>

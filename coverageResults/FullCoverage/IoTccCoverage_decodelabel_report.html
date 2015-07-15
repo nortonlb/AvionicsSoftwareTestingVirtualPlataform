@@ -1,0 +1,63 @@
+<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><body bgcolor="#FFFFFF"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Aggregate&nbsp;Coverage</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><strong>Code&nbsp;Coverage&nbsp;for&nbsp;Unit:&nbsp;DecodeLabel.c</strong></td></tr><tr><td align="left"><pre><span>--&nbsp;Coverage&nbsp;Type:&nbsp;Statement
+</span><span>--&nbsp;Unit:&nbsp;DecodeLabel.c
+</span><span>--&nbsp;Test&nbsp;Case:&nbsp;Aggregate
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;$***************&nbsp;KCG&nbsp;Version&nbsp;6.1.3&nbsp;(build&nbsp;i6)&nbsp;****************
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Command:&nbsp;s2c613&nbsp;-config&nbsp;C:/TccCaseStudy/ScadeSuiteModel/Io/KCG\kcg_s2c_config.txt
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Generation&nbsp;date:&nbsp;2015-05-30T15:20:09
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************************************************************$&nbsp;*/
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\kcg_consts.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\kcg_sensors.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\DecodeLabel.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;DecodeLabel&nbsp;*/
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void&nbsp;DecodeLabel(
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;DecodeLabel::iA429Word&nbsp;*/kcg_int&nbsp;iA429Word,
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;DecodeLabel::iLabelNumber&nbsp;*/kcg_int&nbsp;iLabelNumber,
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;DecodeLabel::bValidLabel&nbsp;*/kcg_bool&nbsp;*bValidLabel,
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;DecodeLabel::rData&nbsp;*/kcg_real&nbsp;*rData)
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kcg_int&nbsp;tmp1;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kcg_int&nbsp;tmp;
+</span><span style="color:#009900;">1&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp1&nbsp;=&nbsp;/*&nbsp;1&nbsp;*/&nbsp;GetData(iA429Word);
+</span><span style="color:#009900;">1&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rData&nbsp;=&nbsp;(kcg_real)&nbsp;tmp1;
+</span><span style="color:#009900;">1&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp1&nbsp;=&nbsp;/*&nbsp;1&nbsp;*/&nbsp;GetLabelNumber(iA429Word);
+</span><span style="color:#009900;">1&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmp&nbsp;=&nbsp;/*&nbsp;1&nbsp;*/&nbsp;GetSSM(iA429Word);
+</span><span style="color:#009900;">1&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*bValidLabel&nbsp;=&nbsp;(tmp1&nbsp;==&nbsp;iLabelNumber)&nbsp;&amp;&nbsp;(tmp&nbsp;==&nbsp;3);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;$***************&nbsp;KCG&nbsp;Version&nbsp;6.1.3&nbsp;(build&nbsp;i6)&nbsp;****************
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;DecodeLabel.c
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Generation&nbsp;date:&nbsp;2015-05-30T15:20:09
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************************************************************$&nbsp;*/
+</span><span>TEST&nbsp;COVERAGE&nbsp;SUMMARY
+</span><span>
+</span><span>
+</span><span>&nbsp;5&nbsp;of&nbsp;5&nbsp;Lines&nbsp;Covered&nbsp;(&nbsp;100%&nbsp;)
+</span></pre></td></tr></table></td></tr></table><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Basis&nbsp;Path</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;"><tr bgcolor="#CCD8EE"><td colspan="1"><strong>Unit:&nbsp;DecodeLabel.c</strong></td></tr><tr bgcolor="#EEEEEE"><td><pre>  
+  Subprogram DecodeLabel
+  
+    Test Path Listing
+    Test Path 1
+        No conditional statements
+  
+      Complexity: 1
+  
+    Source Code Listing
+  
+                 void DecodeLabel(
+                   /* DecodeLabel::iA429Word */kcg_int iA429Word,
+                   /* DecodeLabel::iLabelNumber */kcg_int iLabelNumber,
+                   /* DecodeLabel::bValidLabel */kcg_bool *bValidLabel,
+                   /* DecodeLabel::rData */kcg_real *rData)
+                 {
+                   kcg_int tmp1;
+                   kcg_int tmp;
+  1 0     ( )    DecodeLabel
+                   tmp1 = /* 1 */ GetData(iA429Word);
+                   *rData = (kcg_real) tmp1;
+                   tmp1 = /* 1 */ GetLabelNumber(iA429Word);
+                   tmp = /* 1 */ GetSSM(iA429Word);
+                   *bValidLabel = (tmp1 == iLabelNumber) &amp; (tmp == 3);
+                 }
+  
+  
+  
+</pre></td></tr></table></td></tr></table><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Metrics</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;"><tr bgcolor="#CCD8EE"><td bgcolor="#CCD8EE"><strong>Unit</strong></td><td bgcolor="#CCD8EE"><strong>Subprogram</strong></td><td bgcolor="#CCD8EE"><strong>Complexity</strong></td><td bgcolor="#CCD8EE"><strong>Statements</strong></td></tr><tr bgcolor="#EEEEEE"><td>DecodeLabel.c</td><td>DecodeLabel</td><td align="right">1</td><td bgcolor="#CCFFCC">100%&nbsp;(5&nbsp;/&nbsp;5)</td></tr><tr bgcolor="#EEEEEE"><td><strong>TOTALS</strong></td><td><strong>1</strong></td><td align="right"><strong>1</strong></td><td bgcolor="#CCFFCC"><strong>100%&nbsp;(5&nbsp;/&nbsp;5)</strong></td></tr><tr bgcolor="#EEEEEE"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr bgcolor="#EEEEEE"><td><strong>GRAND&nbsp;TOTALS</strong></td><td><strong>1</strong></td><td align="right"><strong>1</strong></td><td bgcolor="#CCFFCC"><strong>100%&nbsp;(5&nbsp;/&nbsp;5)</strong></td></tr></table></td></tr></table></body></html>

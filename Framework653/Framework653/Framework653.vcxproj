@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3EC019A9-0F47-40BB-84F0-39638E796323}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Framework653</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Esterel Technologies\SCADE R15\SCADE;C:\Program Files %28x86%29\Esterel Technologies\SCADE R15\SCADE\include;C:\TccCaseStudy\ScadeSuiteModel\Io\KCG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_19.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_2.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_8.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\DecodeLabel.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetData.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetLabelNumber.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetSSM.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GpsManager.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\Int2BoolVectElt_digital.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\Int2BoolVect_digital_32.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IoManager.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IrsManager.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_consts.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_types.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\VCAST\Environments\IoTccCoverage\c_cover_io.cpp" />
+    <ClCompile Include="main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_19.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_2.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\BoolVect2Int_digital_8.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\DecodeLabel.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetData.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetLabelNumber.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GetSSM.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\GpsManager.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\Int2BoolVectElt_digital.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\Int2BoolVect_digital_32.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IoManager.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IoManager_macro.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IrsManager.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_consts.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_imported_types.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_sensors.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_types.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\user_macros.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\VCAST\Environments\IoTccCoverage\vcast_c_options.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\cmd_cg.log" />
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\config.txt" />
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\IoManager_VxWorks.files" />
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg.log" />
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_files.txt" />
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_metrics.txt" />
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_s2c_config.txt" />
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_trace.xml" />
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\kcg_xml_filter_out.scade" />
+    <None Include="..\..\..\..\..\..\..\TccCaseStudy\ScadeSuiteModel\Io\KCG\sc2c.log" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,42 @@
+﻿Build started 5/30/2015 3:41:56 PM.
+     1>Project "C:\Users\br31133\documents\visual studio 2010\Projects\Framework653\Framework653\Framework653.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Framework653.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Esterel Technologies\SCADE R15\SCADE" /I"C:\Program Files (x86)\Esterel Technologies\SCADE R15\SCADE\include" /IC:\TccCaseStudy\ScadeSuiteModel\Io\KCG /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+         main.c
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\br31133\documents\visual studio 2010\Projects\Framework653\Debug\Framework653.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Framework653.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\br31133\documents\visual studio 2010\Projects\Framework653\Debug\Framework653.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\br31133\documents\visual studio 2010\Projects\Framework653\Debug\Framework653.lib" /MACHINE:X86 Debug\Framework653.exe.embed.manifest.res
+         Debug\BoolVect2Int_digital_19.obj
+         Debug\BoolVect2Int_digital_2.obj
+         Debug\BoolVect2Int_digital_8.obj
+         Debug\DecodeLabel.obj
+         Debug\GetData.obj
+         Debug\GetLabelNumber.obj
+         Debug\GetSSM.obj
+         Debug\GpsManager.obj
+         Debug\Int2BoolVectElt_digital.obj
+         Debug\Int2BoolVect_digital_32.obj
+         Debug\IoManager.obj
+         Debug\IrsManager.obj
+         Debug\kcg_consts.obj
+         Debug\kcg_types.obj
+         Debug\c_cover_io.obj
+         Debug\main.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Framework653.exe.embed.manifest" /manifest Debug\Framework653.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         Framework653.vcxproj -> C:\Users\br31133\documents\visual studio 2010\Projects\Framework653\Debug\Framework653.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Framework653.unsuccessfulbuild".
+         Touching "Debug\Framework653.lastbuildstate".
+     1>Done Building Project "C:\Users\br31133\documents\visual studio 2010\Projects\Framework653\Framework653\Framework653.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.25

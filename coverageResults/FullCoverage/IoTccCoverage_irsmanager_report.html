@@ -1,0 +1,483 @@
+<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><body bgcolor="#FFFFFF"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Aggregate&nbsp;Coverage</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><strong>Code&nbsp;Coverage&nbsp;for&nbsp;Unit:&nbsp;IrsManager.c</strong></td></tr><tr><td align="left"><pre><span>--&nbsp;Coverage&nbsp;Type:&nbsp;Statement
+</span><span>--&nbsp;Unit:&nbsp;IrsManager.c
+</span><span>--&nbsp;Test&nbsp;Case:&nbsp;Aggregate
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;$***************&nbsp;KCG&nbsp;Version&nbsp;6.1.3&nbsp;(build&nbsp;i6)&nbsp;****************
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Command:&nbsp;s2c613&nbsp;-config&nbsp;C:/TccCaseStudy/ScadeSuiteModel/Io/KCG\kcg_s2c_config.txt
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Generation&nbsp;date:&nbsp;2015-05-30T15:20:09
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************************************************************$&nbsp;*/
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\kcg_consts.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\kcg_sensors.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;"C:\\TccCaseStudy\\ScadeSuiteModel\\Io\\KCG\\IrsManager.h"
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager&nbsp;*/
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void&nbsp;IrsManager(
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::aiA429FromIrs&nbsp;*/array_int_5&nbsp;*aiA429FromIrs,
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::rPitch&nbsp;*/kcg_real&nbsp;*rPitch,
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::rRoll&nbsp;*/kcg_real&nbsp;*rRoll,
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::rSpeed&nbsp;*/kcg_real&nbsp;*rSpeed,
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::bIrsFail&nbsp;*/kcg_bool&nbsp;*bIrsFail)
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L53&nbsp;*/&nbsp;kcg_bool&nbsp;_L53;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L54&nbsp;*/&nbsp;kcg_real&nbsp;_L54;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L56&nbsp;*/&nbsp;kcg_bool&nbsp;_L56;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L57&nbsp;*/&nbsp;kcg_real&nbsp;_L57;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L60&nbsp;*/&nbsp;kcg_bool&nbsp;_L60;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L61&nbsp;*/&nbsp;kcg_real&nbsp;_L61;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L63&nbsp;*/&nbsp;kcg_bool&nbsp;_L63;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L64&nbsp;*/&nbsp;kcg_real&nbsp;_L64;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L65&nbsp;*/&nbsp;kcg_bool&nbsp;_L65;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L66&nbsp;*/&nbsp;kcg_real&nbsp;_L66;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L68&nbsp;*/&nbsp;kcg_real&nbsp;_L68;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;IrsManager::_L45&nbsp;*/&nbsp;kcg_real&nbsp;_L45;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;16&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[0],&nbsp;47,&nbsp;&amp;_L53,&nbsp;&amp;_L54);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;17&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[1],&nbsp;47,&nbsp;&amp;_L56,&nbsp;&amp;_L57);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;18&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[2],&nbsp;47,&nbsp;&amp;_L60,&nbsp;&amp;_L61);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;19&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[3],&nbsp;47,&nbsp;&amp;_L63,&nbsp;&amp;_L64);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;20&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[4],&nbsp;47,&nbsp;&amp;_L65,&nbsp;&amp;_L66);
+</span><span style="color:#009900;">1&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_L45&nbsp;=&nbsp;-&nbsp;30000.0;
+</span><span style="color:#009900;">1&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L53)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rSpeed&nbsp;=&nbsp;_L54;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L56)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rSpeed&nbsp;=&nbsp;_L57;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L60)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rSpeed&nbsp;=&nbsp;_L61;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L63)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rSpeed&nbsp;=&nbsp;_L64;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L65)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rSpeed&nbsp;=&nbsp;_L66;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{
+</span><span style="color:#009900;">1&nbsp;17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rSpeed&nbsp;=&nbsp;_L45;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;21&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[4],&nbsp;84,&nbsp;&amp;_L65,&nbsp;&amp;_L66);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;22&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[3],&nbsp;84,&nbsp;&amp;_L63,&nbsp;&amp;_L64);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;23&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[2],&nbsp;84,&nbsp;&amp;_L60,&nbsp;&amp;_L61);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;24&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[1],&nbsp;84,&nbsp;&amp;_L56,&nbsp;&amp;_L57);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;25&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[0],&nbsp;84,&nbsp;&amp;_L53,&nbsp;&amp;_L54);
+</span><span style="color:#009900;">1&nbsp;23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_L68&nbsp;=&nbsp;-&nbsp;200.0;
+</span><span style="color:#009900;">1&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L53)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rPitch&nbsp;=&nbsp;_L54;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L56)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rPitch&nbsp;=&nbsp;_L57;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L60)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;29&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rPitch&nbsp;=&nbsp;_L61;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L63)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rPitch&nbsp;=&nbsp;_L64;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L65)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rPitch&nbsp;=&nbsp;_L66;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{
+</span><span style="color:#009900;">1&nbsp;34&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rPitch&nbsp;=&nbsp;_L68;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;30&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;35&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[4],&nbsp;85,&nbsp;&amp;_L65,&nbsp;&amp;_L66);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;29&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[3],&nbsp;85,&nbsp;&amp;_L63,&nbsp;&amp;_L64);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;28&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;37&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[2],&nbsp;85,&nbsp;&amp;_L60,&nbsp;&amp;_L61);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;27&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;38&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[1],&nbsp;85,&nbsp;&amp;_L56,&nbsp;&amp;_L57);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;26&nbsp;*/&nbsp;
+</span><span style="color:#009900;">1&nbsp;39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DecodeLabel((*aiA429FromIrs)[0],&nbsp;85,&nbsp;&amp;_L53,&nbsp;&amp;_L54);
+</span><span style="color:#009900;">1&nbsp;40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L53)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;41&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rRoll&nbsp;=&nbsp;_L54;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;42&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L56)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rRoll&nbsp;=&nbsp;_L57;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;44&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L60)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;45&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rRoll&nbsp;=&nbsp;_L61;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;46&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L63)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;47&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rRoll&nbsp;=&nbsp;_L64;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
+</span><span style="color:#009900;">1&nbsp;48&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(_L65)&nbsp;{
+</span><span style="color:#009900;">1&nbsp;49&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rRoll&nbsp;=&nbsp;_L66;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{
+</span><span style="color:#009900;">1&nbsp;50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*rRoll&nbsp;=&nbsp;_L68;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span style="color:#009900;">1&nbsp;51&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*bIrsFail&nbsp;=&nbsp;(*rSpeed&nbsp;==&nbsp;_L45)&nbsp;&amp;&nbsp;(*rPitch&nbsp;==&nbsp;_L68)&nbsp;&amp;&nbsp;(*rRoll&nbsp;==&nbsp;_L68);
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;$***************&nbsp;KCG&nbsp;Version&nbsp;6.1.3&nbsp;(build&nbsp;i6)&nbsp;****************
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;IrsManager.c
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;Generation&nbsp;date:&nbsp;2015-05-30T15:20:09
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************************************************************$&nbsp;*/
+</span><span>TEST&nbsp;COVERAGE&nbsp;SUMMARY
+</span><span>
+</span><span>
+</span><span>&nbsp;51&nbsp;of&nbsp;51&nbsp;Lines&nbsp;Covered&nbsp;(&nbsp;100%&nbsp;)
+</span></pre></td></tr></table></td></tr></table><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Basis&nbsp;Path</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;"><tr bgcolor="#CCD8EE"><td colspan="1"><strong>Unit:&nbsp;IrsManager.c</strong></td></tr><tr bgcolor="#EEEEEE"><td><pre>  
+  Subprogram IrsManager
+  
+    Test Path Listing
+    Test Path 1
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 2
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; TRUE
+    Test Path 3
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; TRUE
+    Test Path 4
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; TRUE
+    Test Path 5
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; TRUE
+    Test Path 6
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; TRUE
+    Test Path 7
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; TRUE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 8
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; TRUE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 9
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; TRUE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 10
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; TRUE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 11
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; FALSE
+           (6) if _L53 ==&gt; TRUE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 12
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; FALSE
+           (5) if _L65 ==&gt; TRUE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 13
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; FALSE
+           (4) if _L63 ==&gt; TRUE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 14
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; FALSE
+           (3) if _L60 ==&gt; TRUE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 15
+           (1) if _L53 ==&gt; FALSE
+           (2) if _L56 ==&gt; TRUE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+    Test Path 16
+           (1) if _L53 ==&gt; TRUE
+           (6) if _L53 ==&gt; FALSE
+           (7) if _L56 ==&gt; FALSE
+           (8) if _L60 ==&gt; FALSE
+           (9) if _L63 ==&gt; FALSE
+           (10) if _L65 ==&gt; FALSE
+           (11) if _L53 ==&gt; FALSE
+           (12) if _L56 ==&gt; FALSE
+           (13) if _L60 ==&gt; FALSE
+           (14) if _L63 ==&gt; FALSE
+           (15) if _L65 ==&gt; FALSE
+  
+      Complexity: 16
+  
+    Source Code Listing
+  
+                 void IrsManager(
+                   /* IrsManager::aiA429FromIrs */array_int_5 *aiA429FromIrs,
+                   /* IrsManager::rPitch */kcg_real *rPitch,
+                   /* IrsManager::rRoll */kcg_real *rRoll,
+                   /* IrsManager::rSpeed */kcg_real *rSpeed,
+                   /* IrsManager::bIrsFail */kcg_bool *bIrsFail)
+                 {
+                   /* IrsManager::_L53 */ kcg_bool _L53;
+                   /* IrsManager::_L54 */ kcg_real _L54;
+                   /* IrsManager::_L56 */ kcg_bool _L56;
+                   /* IrsManager::_L57 */ kcg_real _L57;
+                   /* IrsManager::_L60 */ kcg_bool _L60;
+                   /* IrsManager::_L61 */ kcg_real _L61;
+                   /* IrsManager::_L63 */ kcg_bool _L63;
+                   /* IrsManager::_L64 */ kcg_real _L64;
+                   /* IrsManager::_L65 */ kcg_bool _L65;
+                   /* IrsManager::_L66 */ kcg_real _L66;
+                   /* IrsManager::_L68 */ kcg_real _L68;
+                   /* IrsManager::_L45 */ kcg_real _L45;
+                   /* 16 */ 
+  1 0     ( )    IrsManager
+                            DecodeLabel((*aiA429FromIrs)[0], 47, &amp;_L53, &amp;_L54);
+                   /* 17 */ DecodeLabel((*aiA429FromIrs)[1], 47, &amp;_L56, &amp;_L57);
+                   /* 18 */ DecodeLabel((*aiA429FromIrs)[2], 47, &amp;_L60, &amp;_L61);
+                   /* 19 */ DecodeLabel((*aiA429FromIrs)[3], 47, &amp;_L63, &amp;_L64);
+                   /* 20 */ DecodeLabel((*aiA429FromIrs)[4], 47, &amp;_L65, &amp;_L66);
+                   _L45 = - 30000.0;
+  1 1     ( )( ) if (_L53) {
+                     *rSpeed = _L54;
+                   }
+                   else 
+  1 2     ( )( )      if (_L56) {
+                     *rSpeed = _L57;
+                   }
+                   else 
+  1 3     ( )( )           if (_L60) {
+                     *rSpeed = _L61;
+                   }
+                   else 
+  1 4     ( )( )           if (_L63) {
+                     *rSpeed = _L64;
+                   }
+                   else 
+  1 5     ( )( )           if (_L65) {
+                     *rSpeed = _L66;
+                   }
+                   else {
+                     *rSpeed = _L45;
+                   }
+                   /* 21 */ DecodeLabel((*aiA429FromIrs)[4], 84, &amp;_L65, &amp;_L66);
+                   /* 22 */ DecodeLabel((*aiA429FromIrs)[3], 84, &amp;_L63, &amp;_L64);
+                   /* 23 */ DecodeLabel((*aiA429FromIrs)[2], 84, &amp;_L60, &amp;_L61);
+                   /* 24 */ DecodeLabel((*aiA429FromIrs)[1], 84, &amp;_L56, &amp;_L57);
+                   /* 25 */ DecodeLabel((*aiA429FromIrs)[0], 84, &amp;_L53, &amp;_L54);
+                   _L68 = - 200.0;
+  1 6     ( )( ) if (_L53) {
+                     *rPitch = _L54;
+                   }
+                   else 
+  1 7     ( )( )      if (_L56) {
+                     *rPitch = _L57;
+                   }
+                   else 
+  1 8     ( )( )           if (_L60) {
+                     *rPitch = _L61;
+                   }
+                   else 
+  1 9     ( )( )           if (_L63) {
+                     *rPitch = _L64;
+                   }
+                   else 
+  1 10    ( )( )           if (_L65) {
+                     *rPitch = _L66;
+                   }
+                   else {
+                     *rPitch = _L68;
+                   }
+                   /* 30 */ DecodeLabel((*aiA429FromIrs)[4], 85, &amp;_L65, &amp;_L66);
+                   /* 29 */ DecodeLabel((*aiA429FromIrs)[3], 85, &amp;_L63, &amp;_L64);
+                   /* 28 */ DecodeLabel((*aiA429FromIrs)[2], 85, &amp;_L60, &amp;_L61);
+                   /* 27 */ DecodeLabel((*aiA429FromIrs)[1], 85, &amp;_L56, &amp;_L57);
+                   /* 26 */ DecodeLabel((*aiA429FromIrs)[0], 85, &amp;_L53, &amp;_L54);
+  1 11    ( )( ) if (_L53) {
+                     *rRoll = _L54;
+                   }
+                   else 
+  1 12    ( )( )      if (_L56) {
+                     *rRoll = _L57;
+                   }
+                   else 
+  1 13    ( )( )           if (_L60) {
+                     *rRoll = _L61;
+                   }
+                   else 
+  1 14    ( )( )           if (_L63) {
+                     *rRoll = _L64;
+                   }
+                   else 
+  1 15    ( )( )           if (_L65) {
+                     *rRoll = _L66;
+                   }
+                   else {
+                     *rRoll = _L68;
+                   }
+                   *bIrsFail = (*rSpeed == _L45) &amp; (*rPitch == _L68) &amp; (*rRoll == _L68);
+                 }
+  
+  
+  
+</pre></td></tr></table></td></tr></table><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;" width="100%"><tr bgcolor="#94A5C6"><td align="left"><span style="font-family:Arial;font-size:14pt;color:#000000;"><strong>Metrics</strong></span></td></tr><tr><td align="left"><table border="0" cellpadding="2" style="font-family:Arial;font-size:10pt;color:#000000;"><tr bgcolor="#CCD8EE"><td bgcolor="#CCD8EE"><strong>Unit</strong></td><td bgcolor="#CCD8EE"><strong>Subprogram</strong></td><td bgcolor="#CCD8EE"><strong>Complexity</strong></td><td bgcolor="#CCD8EE"><strong>Statements</strong></td></tr><tr bgcolor="#EEEEEE"><td>IrsManager.c</td><td>IrsManager</td><td align="right">16</td><td bgcolor="#CCFFCC">100%&nbsp;(51&nbsp;/&nbsp;51)</td></tr><tr bgcolor="#EEEEEE"><td><strong>TOTALS</strong></td><td><strong>1</strong></td><td align="right"><strong>16</strong></td><td bgcolor="#CCFFCC"><strong>100%&nbsp;(51&nbsp;/&nbsp;51)</strong></td></tr><tr bgcolor="#EEEEEE"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr bgcolor="#EEEEEE"><td><strong>GRAND&nbsp;TOTALS</strong></td><td><strong>1</strong></td><td align="right"><strong>16</strong></td><td bgcolor="#CCFFCC"><strong>100%&nbsp;(51&nbsp;/&nbsp;51)</strong></td></tr></table></td></tr></table></body></html>
